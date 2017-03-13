@@ -1,0 +1,21 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="ngom.vicky.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true">
+	<!-- using displayBlock to  make the fullscreen height of the view work properly-->
+	<!-- using App to make sure mobile display -->
+	<App>
+		<pages>
+			<Page title="{i18n>pageTitle}">
+				<content>
+					<Panel headerText="{i18n>panelHeaderText}">
+						<Button text="{i18n>ButtonTest}" press="onButtonPressed"/>
+						<Input
+					      value="{input>/name}"
+					      description="hello {input>/name}"
+					      valueLiveUpdate="true"
+					      width="60%"/>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>	
+</core:View>
